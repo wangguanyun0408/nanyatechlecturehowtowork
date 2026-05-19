@@ -164,11 +164,6 @@
         </section>
     </main>
 
-    <footer class="text-center py-10 text-slate-400 text-xs border-t border-slate-100 bg-white mt-12">
-        <p class="mb-2">資料來源：南亞科技財報公布資訊 | 網頁使用 Chart.js & Tailwind CSS 建置</p>
-        <p>&copy; 2026 南亞科財報與營運深度分析網頁. All Rights Reserved.</p>
-    </footer>
-
     <!-- 浮動按鈕：開啟講稿側邊欄 -->
     <button onclick="toggleScriptPanel()" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-2xl hover:bg-indigo-700 hover:scale-105 transition-all duration-300 z-40 flex items-center justify-center group">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -179,12 +174,12 @@
         </span>
     </button>
 
-    <!-- 講稿側邊欄 (Presenter Panel) -->
-    <div id="scriptPanel" class="fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto border-l border-slate-200">
+    <!-- 講稿側邊欄 (Presenter Panel - 零基礎詳盡版) -->
+    <div id="scriptPanel" class="fixed inset-y-0 right-0 w-full md:w-[28rem] bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto border-l border-slate-200">
         <div class="p-6">
             <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
                 <h3 class="text-xl font-bold text-indigo-900 flex items-center">
-                    <span class="mr-2">🎙️</span> 簡報講稿與引導
+                    <span class="mr-2">🎙️</span> 簡報講稿 (零基礎詳細版)
                 </h3>
                 <button onclick="toggleScriptPanel()" class="text-slate-400 hover:text-red-500 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,35 +188,45 @@
                 </button>
             </div>
 
-            <div class="space-y-6 text-sm text-slate-700">
+            <div class="space-y-6 text-sm text-slate-700 leading-relaxed">
                 <!-- 開場 -->
-                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 開場 (停留在最上方標題)</div>
-                    <p>「大家好，今天我要帶各位從財務與營運的雙重視角，來深度解析台股半導體的關鍵指標股——南亞科技。大家現在畫面上看到的，是我建立的動態追蹤網頁。南亞科作為記憶體產業的風向球，在 2026 年第一季交出了一份驚人的成績單。接下來，我們將從它的產業定位一路剖析到最新的財務數據。」</p>
+                <div class="bg-indigo-50 p-5 rounded-lg border border-indigo-100">
+                    <div class="text-xs font-bold text-indigo-700 mb-2 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span> 動作：停留在最上方標題
+                    </div>
+                    <p>「各位教授 / 各位同學大家好。今天我要為大家介紹的是台灣股市中非常重要，但可能大家平常比較少去深入了解的一家公司——『南亞科技』，股票代號 2408。<br><br>大家現在看到的，是我特別製作的互動式分析網頁。今天，我會假設大家之前完全不認識這家公司，我將從『它到底是做什麼的』開始，用最淺顯易懂的方式，一路帶大家看懂它最近一季非常驚人、甚至可以說是戲劇化的財報表現。」</p>
                 </div>
 
                 <!-- 區塊一 -->
-                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊一 (向下滑至核心概述)</div>
-                    <p>「首先，我們來重新定位南亞科。它不僅是台塑集團旗下的科技旗艦，更是全球第四大 DRAM 製造商。<br><br>大家可以注意到右側的『新藍海布局』，南亞科已經成功切入高階邊緣運算的供應鏈，特別是受惠於客製化 AI UWIO 記憶體的出貨，這正是他們這波營運爆發的核心底氣。」</p>
+                <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                    <div class="text-xs font-bold text-slate-700 mb-2 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：向下滑動至【公司核心概述】
+                    </div>
+                    <p>「首先，南亞科到底是誰？簡單來說，它是『台塑集團』旗下的科技金雞母。他們專門生產一種叫做『DRAM』的東西，中文叫動態隨機存取記憶體。大家可以把它想像成手機或電腦的『大腦短期記憶區』，沒有它，你的手機連開機、滑 IG 都沒辦法。<br><br>在全球市場中，南亞科是世界第四大 DRAM 製造廠，僅次於韓國的三星、海力士跟美國的美光。它也是台灣唯一有能力『自己研發並把晶片製造出來』的記憶體大廠。<br><br>大家可以看右邊的板塊，過去他們的產品主要用在電腦和手機，但現在他們找到了一片新藍海——『AI 記憶體』。他們開發出專門給 AI 邊緣運算使用的記憶體，這讓他們成功搭上了目前的 AI 熱潮。」</p>
                 </div>
 
                 <!-- 區塊二 -->
-                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊二 (游標引導三個數據方塊)</div>
-                    <p>「有了產業地位作護城河，請看這三個關鍵數據：<br>第一，獲利大爆發，2026 Q1 單季 EPS 衝上 8.41 元。<br>第二，技術超車，1C/1D 製程與 EUV 開發如期進行。<br>第三，是非常關鍵的 787.2 億私募案。由四大客戶全數認購，這代表的不是單純募資，而是大客戶願意拿錢綁產能，穩固了未來的訂單基本盤。」</p>
+                <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                    <div class="text-xs font-bold text-slate-700 mb-2 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：游標引導三個數據方塊
+                    </div>
+                    <p>「有了這個基本概念後，我們來看第二區塊的三個關鍵數字，這代表了他們現在的武力值：<br><br>第一個是『8.41元』。這是他們 2026 年第一季的 EPS（每股盈餘），意思就是光這三個月，他們幫股東每一股賺了 8 塊多，營收比上一季暴增了 63%，這是一個極度誇張的成長。<br><br>第二個是『1C/1D 與 EUV』。大家不用管這串英文是什麼，只要知道，這代表南亞科正在買世界上最貴、最先進的製造設備，並且正在蓋一座新的『泰山新廠』，保證了他們未來幾年不會被對手淘汰。<br><br>第三個數字非常關鍵，『787.2 億』。南亞科最近辦理了私募，找來了四大核心客戶，直接掏錢把這將近 800 億全包了。在商業上這代表什麼？這代表客戶太怕未來買不到南亞科的晶片，所以乾脆直接砸大錢當股東，把未來的產能先包下來。這顯示了市場對他們的極度信任。」</p>
                 </div>
 
                 <!-- 區塊三 -->
-                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊三 (解說三大報表)</div>
-                    <p>「從三大報表來看，南亞科展現了教科書級別的 V 型反轉：<br>損益表告訴我們，藉著報價上漲的東風，單季狂賺超過 260 億。<br>資產負債表顯示每股淨值攀升至 62.25 元，加上私募資金注入，抗風險能力極強。<br>現金流量表部分，雖然因蓋新廠有大額流出，但當前強勁的營業現金流完全可以支撐，沒有流動性風險。」</p>
+                <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                    <div class="text-xs font-bold text-slate-700 mb-2 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：解說三大報表區塊
+                    </div>
+                    <p>「接著，我們來看看企業的體檢表——三大財務報表。南亞科現在經歷的是一個非常經典的『V 型反轉』，也就是從谷底大翻身。<br><br>首先『綜合損益表』告訴我們，2025 年上半年他們其實還在大賠錢，但因為全球記憶體價格大漲了 70%，加上剛剛提到的 AI 產品發威，他們在 2026 年第一季直接狂賺超過 260 億台幣。<br><br>『資產負債表』的部分，因為剛剛提到那將近 800 億的資金進來了，公司現在口袋滿滿，每股淨值提高，負債比例也跟著降低，體質非常健康。<br><br>『現金流量表』則顯示，雖然他們花了很多錢在蓋新廠，但因為現在本業賺錢的速度太快了，每天開門營業進來的現金完全可以支付這些蓋廠開銷，公司一點資金壓力都沒有。」</p>
                 </div>
 
                 <!-- 區塊四與結語 -->
-                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊四 (展示圖表與結尾)</div>
-                    <p>「最後，請大家看最下方的折線圖。(游標滑過圖表顯示數據)<br>這張圖總結了近四季的驚奇之旅。從 2025 年 Q2 毛利率還是負的慘況，一路向上攀升至今年第一季逼近 68%。這兩條陡峭的曲線印證了產業的復甦。<br><br>總結來說，面對未來的 AI 記憶體戰場，南亞科已經站穩腳步，是一檔值得高度關注的核心標的。報告完畢，謝謝大家。」</p>
+                <div class="bg-indigo-50 p-5 rounded-lg border border-indigo-100">
+                    <div class="text-xs font-bold text-indigo-700 mb-2 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span> 動作：游標滑過圖表顯示 Tooltip 數據，並作結尾
+                    </div>
+                    <p>「最後，請大家看到網頁最下方的折線圖。<br><br>這張圖最能代表南亞科這近一年的戲劇性變化。綠色線是『毛利率』（產品本身賺不賺錢），藍色線是『淨利率』（扣除所有開銷後真正放進口袋的錢）。<br><br>大家看最左邊 2025 年第二季，這兩條線都在零軸以下，代表賣一片賠一片；但隨著產業復甦與成功轉型，線條一路陡峭往上衝，到今年第一季，毛利率竟然逼近 68%！<br><br>總結來說，南亞科從一家面臨產業低谷的傳統記憶體廠，成功轉型並搭上 AI 列車，加上大客戶的實質資金力挺與先進製程的佈局。它不僅挺過了寒冬，現在更是台股中極具爆發力的半導體指標。我的報告到此結束，謝謝大家。」</p>
                 </div>
             </div>
         </div>
@@ -232,7 +237,6 @@
         // 側邊欄開關邏輯
         function toggleScriptPanel() {
             const panel = document.getElementById('scriptPanel');
-            // 切換 Tailwind 的 transform 類別來滑入/滑出
             if (panel.classList.contains('translate-x-full')) {
                 panel.classList.remove('translate-x-full');
             } else {
