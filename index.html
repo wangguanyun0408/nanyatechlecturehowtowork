@@ -1,1 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南亞科 (2408) 核心定位與財報營運深度分析</title>
+    <!-- 引入 Tailwind CSS 進行快速排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Chart.js 繪製圖表 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed relative overflow-x-hidden">
 
+    <!-- 頂部導航 / 標頭區 -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-950 text-white py-16 text-center shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
+        <div class="relative max-w-5xl mx-auto px-6">
+            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full border border-blue-500/30">
+                台股半導體指標股
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-3 tracking-tight">南亞科技 (2408) 營運與財報解析</h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light">
+                核心業務定位、全球 DRAM 產業布局與 2026 Q1 最新季度財務指標追蹤
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-12 px-6 space-y-12">
+        
+        <!-- 區塊一：公司概述與產業地位 -->
+        <section id="section-1" class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">公司核心概述與台股地位</h2>
+            </div>
+            
+            <p class="text-slate-600 mb-6 text-base leading-relaxed">
+                隸屬於<strong class="text-slate-900 font-semibold">台塑集團</strong>的南亞科技（Nanya Technology），是台灣最具代表性的 DRAM（動態隨機存取記憶體）核心製造大廠，更是台灣唯一具備自主研發製程技術能力的記憶體 IDM（整合元件製造）大廠。
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <div class="border border-slate-100 bg-slate-50/50 p-6 rounded-xl">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">全球與台股市場地位</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600">
+                        <li><strong class="text-slate-800">全球第四大 DRAM 廠：</strong>次於三星、SK海力士與美光，在利基型與消費性記憶體市場擁有極高的話語權。</li>
+                        <li><strong class="text-slate-800">台塑集團科技旗艦：</strong>背靠集團雄厚的資金與管理綜效，具備極強的抗週期風險能力。</li>
+                        <li><strong class="text-slate-800">台股市值關鍵權值股：</strong>作為記憶體產業的景氣風向球，其營運表現直接影響半導體組群及電子股的整體氣勢。</li>
+                    </ul>
+                </div>
+                <div class="border border-slate-100 bg-slate-50/50 p-6 rounded-xl">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">我們處在什麼領域？在做什麼？</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600">
+                        <li><strong class="text-slate-800">核心業務：</strong>專注於研發、設計、製造及銷售高品質的動態隨機存取記憶體（DRAM）晶片。</li>
+                        <li><strong class="text-slate-800">應用場景：</strong>產品廣泛應用於智慧型手機、伺服器、數據中心、個人電腦、車用電子以及網通消費性電子產品。</li>
+                        <li><strong class="text-slate-800">新藍海布局：</strong>積極進軍 AI 記憶體市場，受惠於客製化 AI UWIO 記憶體出貨，成功切入高階邊緣運算供應鏈。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 區塊二：技術布局與未來展望 -->
+        <section id="section-2" class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">核心技術布局與轉型營運指標</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">最新營運成果</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">8.41 元</div>
+                    <p class="text-xs text-slate-500">2026 年 Q1 單季 EPS 達 8.41 元，營收達 490.87 億元（季增 63.1%），營運迎來強勁成長。</p>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-indigo-600 uppercase tracking-wide mb-1">先進製程進度</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">1C / 1D</div>
+                    <p class="text-xs text-slate-500">第三代、第四代 10 奈米級製程及 EUV 開發按計畫進行，泰山新廠預計 2027 年 Q1 裝機。</p>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-1">資本結構與私募</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">787.2 億</div>
+                    <p class="text-xs text-slate-500">甫完成 787.2 億元私募案，由四大核心客戶全數認購，穩固長期供貨策略聯盟合作關係。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 區塊三：三大報表介紹 -->
+        <section id="section-3" class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">三大報表重點解析</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-6">
+                <div class="bg-blue-50/50 p-6 rounded-xl border border-blue-100/50 hover:bg-blue-50 transition-colors">
+                    <h3 class="font-bold text-lg mb-2 text-blue-950">綜合損益表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        獲利能力出現極端 V 型反轉。2025 年上半年深陷虧損週期，但 2026 年 Q1 憑藉 DRAM 報價季增逾 70%，單季狂賺 260.58 億元。
+                    </p>
+                </div>
+                <div class="bg-indigo-50/50 p-6 rounded-xl border border-indigo-100/50 hover:bg-indigo-50 transition-colors">
+                    <h3 class="font-bold text-lg mb-2 text-indigo-950">資產負債表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        財務體質強健。2026 年第一季末每股淨值大幅攀升至 62.25 元。在 787 億元私募資金注入後，有效充實營運資本並壓低負債比。
+                    </p>
+                </div>
+                <div class="bg-emerald-50/50 p-6 rounded-xl border border-emerald-100/50 hover:bg-emerald-50 transition-colors">
+                    <h3 class="font-bold text-lg mb-2 text-emerald-950">現金流量表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        投資活動現金流因佈局 EUV 與新廠而大額流出，但當前營業淨現金流極端強勁，足以完全支撐擴充計畫，無流動性風險。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 區塊四：財報數據圖表 -->
+        <section id="section-4" class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">近四季財務比率比較與趨勢</h2>
+            </div>
+            
+            <div class="overflow-x-auto mb-8 border border-slate-100 rounded-xl shadow-sm">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-700 border-b border-slate-100 text-sm">
+                            <th class="p-4 font-semibold">季度</th>
+                            <th class="p-4 font-semibold">毛利率</th>
+                            <th class="p-4 font-semibold">營業利益率</th>
+                            <th class="p-4 font-semibold">稅後淨利率</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600 text-sm divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-bold text-slate-900">2026 Q1</td>
+                            <td class="p-4 text-emerald-600 font-bold">67.89%</td>
+                            <td class="p-4 text-slate-900 font-medium">61.34%</td>
+                            <td class="p-4 text-slate-900 font-medium">53.09%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-medium text-slate-900">2025 Q4</td>
+                            <td class="p-4">49.05%</td>
+                            <td class="p-4">39.15%</td>
+                            <td class="p-4">36.86%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-medium text-slate-900">2025 Q3</td>
+                            <td class="p-4">18.45%</td>
+                            <td class="p-4">5.96%</td>
+                            <td class="p-4">8.32%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors bg-red-50/20">
+                            <td class="p-4 font-medium text-slate-900">2025 Q2</td>
+                            <td class="p-4 text-red-500 font-semibold">-20.56%</td>
+                            <td class="p-4 text-red-500">-42.76%</td>
+                            <td class="p-4 text-red-500">-38.97%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 圖表畫布 -->
+            <div class="relative h-96 w-full bg-slate-50 p-4 rounded-xl border border-slate-100">
+                <canvas id="marginChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-10 text-slate-400 text-xs border-t border-slate-100 bg-white mt-12">
+        <p class="mb-2">資料來源：南亞科技財報公布資訊 | 網頁使用 Chart.js & Tailwind CSS 建置</p>
+        <p>&copy; 2026 南亞科財報與營運深度分析網頁. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 浮動按鈕：開啟講稿側邊欄 -->
+    <button onclick="toggleScriptPanel()" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-2xl hover:bg-indigo-700 hover:scale-105 transition-all duration-300 z-40 flex items-center justify-center group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        </svg>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-in-out text-sm font-bold">
+            開啟講稿模式
+        </span>
+    </button>
+
+    <!-- 講稿側邊欄 (Presenter Panel) -->
+    <div id="scriptPanel" class="fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto border-l border-slate-200">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
+                <h3 class="text-xl font-bold text-indigo-900 flex items-center">
+                    <span class="mr-2">🎙️</span> 簡報講稿與引導
+                </h3>
+                <button onclick="toggleScriptPanel()" class="text-slate-400 hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-6 text-sm text-slate-700">
+                <!-- 開場 -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 開場 (停留在最上方標題)</div>
+                    <p>「大家好，今天我要帶各位從財務與營運的雙重視角，來深度解析台股半導體的關鍵指標股——南亞科技。大家現在畫面上看到的，是我建立的動態追蹤網頁。南亞科作為記憶體產業的風向球，在 2026 年第一季交出了一份驚人的成績單。接下來，我們將從它的產業定位一路剖析到最新的財務數據。」</p>
+                </div>
+
+                <!-- 區塊一 -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊一 (向下滑至核心概述)</div>
+                    <p>「首先，我們來重新定位南亞科。它不僅是台塑集團旗下的科技旗艦，更是全球第四大 DRAM 製造商。<br><br>大家可以注意到右側的『新藍海布局』，南亞科已經成功切入高階邊緣運算的供應鏈，特別是受惠於客製化 AI UWIO 記憶體的出貨，這正是他們這波營運爆發的核心底氣。」</p>
+                </div>
+
+                <!-- 區塊二 -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊二 (游標引導三個數據方塊)</div>
+                    <p>「有了產業地位作護城河，請看這三個關鍵數據：<br>第一，獲利大爆發，2026 Q1 單季 EPS 衝上 8.41 元。<br>第二，技術超車，1C/1D 製程與 EUV 開發如期進行。<br>第三，是非常關鍵的 787.2 億私募案。由四大客戶全數認購，這代表的不是單純募資，而是大客戶願意拿錢綁產能，穩固了未來的訂單基本盤。」</p>
+                </div>
+
+                <!-- 區塊三 -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊三 (解說三大報表)</div>
+                    <p>「從三大報表來看，南亞科展現了教科書級別的 V 型反轉：<br>損益表告訴我們，藉著報價上漲的東風，單季狂賺超過 260 億。<br>資產負債表顯示每股淨值攀升至 62.25 元，加上私募資金注入，抗風險能力極強。<br>現金流量表部分，雖然因蓋新廠有大額流出，但當前強勁的營業現金流完全可以支撐，沒有流動性風險。」</p>
+                </div>
+
+                <!-- 區塊四與結語 -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <div class="text-xs font-bold text-indigo-600 mb-2">📌 區塊四 (展示圖表與結尾)</div>
+                    <p>「最後，請大家看最下方的折線圖。(游標滑過圖表顯示數據)<br>這張圖總結了近四季的驚奇之旅。從 2025 年 Q2 毛利率還是負的慘況，一路向上攀升至今年第一季逼近 68%。這兩條陡峭的曲線印證了產業的復甦。<br><br>總結來說，面對未來的 AI 記憶體戰場，南亞科已經站穩腳步，是一檔值得高度關注的核心標的。報告完畢，謝謝大家。」</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart.js 繪圖邏輯與側邊欄開關腳本 -->
+    <script>
+        // 側邊欄開關邏輯
+        function toggleScriptPanel() {
+            const panel = document.getElementById('scriptPanel');
+            // 切換 Tailwind 的 transform 類別來滑入/滑出
+            if (panel.classList.contains('translate-x-full')) {
+                panel.classList.remove('translate-x-full');
+            } else {
+                panel.classList.add('translate-x-full');
+            }
+        }
+
+        // Chart.js 繪圖邏輯
+        const ctx = document.getElementById('marginChart').getContext('2d');
+        const marginChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2025 Q2', '2025 Q3', '2025 Q4', '2026 Q1'],
+                datasets: [
+                    {
+                        label: '毛利率 (%)',
+                        data: [-20.56, 18.45, 49.05, 67.89],
+                        borderColor: 'rgba(16, 185, 129, 1)', 
+                        backgroundColor: 'rgba(16, 185, 129, 0.08)',
+                        borderWidth: 3,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        tension: 0.25,
+                        fill: true
+                    },
+                    {
+                        label: '淨利率 (%)',
+                        data: [-38.97, 8.32, 36.86, 53.09],
+                        borderColor: 'rgba(59, 130, 246, 1)', 
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                        borderWidth: 3,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        tension: 0.25,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { 
+                            boxWidth: 12,
+                            font: { size: 13, weight: '500' },
+                            color: '#334155'
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        padding: 12,
+                        cornerRadius: 8,
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                        callbacks: {
+                            label: function(context) {
+                                return ' ' + context.dataset.label + ': ' + context.parsed.y + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        title: { display: true, text: '百分比 (%)', color: '#64748b' },
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#64748b' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
