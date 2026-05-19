@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <!-- 區塊四：財報數據圖表 (新增稅前淨利率) -->
+        <!-- 區塊四：財報數據圖表 (更新稅前淨利率數據) -->
         <section id="section-4" class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
             <div class="flex items-center space-x-3 mb-6">
                 <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
@@ -140,28 +140,28 @@
                             <td class="p-4 font-bold text-slate-900">2026 Q1</td>
                             <td class="p-4 text-emerald-600 font-bold">67.89%</td>
                             <td class="p-4 text-slate-900 font-medium">61.34%</td>
-                            <td class="p-4 text-purple-600 font-bold">60.12%</td>
+                            <td class="p-4 text-purple-600 font-bold">64.62%</td>
                             <td class="p-4 text-blue-600 font-bold">53.09%</td>
                         </tr>
                         <tr class="hover:bg-slate-50/80 transition-colors">
                             <td class="p-4 font-medium text-slate-900">2025 Q4</td>
                             <td class="p-4">49.05%</td>
                             <td class="p-4">39.15%</td>
-                            <td class="p-4">41.55%</td>
+                            <td class="p-4 text-purple-600 font-bold">44.47%</td>
                             <td class="p-4">36.86%</td>
                         </tr>
                         <tr class="hover:bg-slate-50/80 transition-colors">
                             <td class="p-4 font-medium text-slate-900">2025 Q3</td>
                             <td class="p-4">18.45%</td>
                             <td class="p-4">5.96%</td>
-                            <td class="p-4">9.80%</td>
+                            <td class="p-4 text-purple-600 font-bold">10.77%</td>
                             <td class="p-4">8.32%</td>
                         </tr>
                         <tr class="hover:bg-slate-50/80 transition-colors bg-red-50/20">
                             <td class="p-4 font-medium text-slate-900">2025 Q2</td>
                             <td class="p-4 text-red-500 font-semibold">-20.56%</td>
                             <td class="p-4 text-red-500">-42.76%</td>
-                            <td class="p-4 text-red-500">-41.20%</td>
+                            <td class="p-4 text-red-500 font-semibold">-48.46%</td>
                             <td class="p-4 text-red-500">-38.97%</td>
                         </tr>
                     </tbody>
@@ -185,12 +185,12 @@
         </span>
     </button>
 
-    <!-- 講稿側邊欄 (超詳細演講引導版 - 針對小白設計四大報表與四大指標) -->
-    <div id="scriptPanel" class="fixed inset-y-0 right-0 w-full md:w-[32rem] bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto border-l border-slate-200">
+    <!-- 講稿側邊欄 (超詳細演講引導版 - 針對所有簡報項目逐點解說) -->
+    <div id="scriptPanel" class="fixed inset-y-0 right-0 w-full md:w-[36rem] bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto border-l border-slate-200">
         <div class="p-8">
             <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100 sticky top-0 bg-white z-10">
                 <h3 class="text-xl font-bold text-indigo-900 flex items-center">
-                    <span class="mr-2">🎙️</span> 演講者提詞機 (小白友善版)
+                    <span class="mr-2">🎙️</span> 演講者提詞機 (逐點超詳細版)
                 </h3>
                 <button onclick="toggleScriptPanel()" class="text-slate-400 hover:text-red-500 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -206,42 +206,77 @@
                     <div class="text-xs font-bold text-indigo-700 mb-3 flex items-center">
                         <span class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span> 動作：停留在頂部大標題
                     </div>
-                    <p class="text-base font-semibold text-slate-800 mb-2">【開場破冰：消除對股票的恐懼】</p>
-                    <p>「各位好！提到『股票』或『財報』，很多人第一直覺可能是：天啊好複雜、我看不懂。但今天，請大家把那些複雜的數字先拋到腦後。</p>
-                    <p class="mt-2">我們今天只講一件事：<strong class="text-indigo-600">『一家公司是怎麼賺錢的？』</strong></p>
-                    <p class="mt-2">今天的主角，是我們台灣的一家隱形冠軍——『南亞科技』。接下來的幾分鐘，我會用最白話的方式，帶大家看懂這家公司到底在賣什麼，以及它最近為什麼能在市場上賺大錢。」</p>
+                    <p class="text-base font-semibold text-slate-800 mb-2">【開場破冰】</p>
+                    <p>「各位好！提到『股票』或『財報』，大家可能會覺得很遙遠、很複雜。但今天，請大家把那些複雜的數字先拋到腦後。我們今天只講一件事：<strong class="text-indigo-600">『一家公司是怎麼賺錢的？』</strong></p>
+                    <p class="mt-2">今天的主角，是台灣的一家隱形冠軍——『南亞科技』。接下來，我會把簡報上的每一點，用最白話的方式，帶大家看懂這家公司。」</p>
                 </div>
 
-                <!-- 2. 四大報表比喻 -->
+                <!-- 2. 第一區塊：逐點解釋公司概述 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="text-xs font-bold text-slate-500 mb-3 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：向下捲動至【公司核心概述與台股地位】
+                    </div>
+                    <p class="text-base font-semibold text-slate-800 mb-2">【逐點解釋：公司背景與地位】</p>
+                    <p>「大家先看第一個區塊的介紹。南亞科到底是誰？</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-3">
+                        <li><strong class="text-blue-700">台塑集團科技旗艦：</strong> 他的老爸是台灣最大的傳統產業『台塑集團』，有這座大靠山，代表他有極強的資金後盾，即使遇到景氣不好也能撐過去，這就是簡報上寫的『抗週期風險能力』。</li>
+                        <li><strong class="text-blue-700">自主研發 IDM 廠：</strong> IDM 的意思就是，他不只會幫人代工，他還能自己設計、自己研發、自己製造！在台灣記憶體界，他是唯一有這種全包能力的大廠。</li>
+                        <li><strong class="text-blue-700">全球第四大 DRAM 廠：</strong> 在全世界做 DRAM (記憶體) 的市場裡，他排名第四，僅次於韓國的三星、海力士跟美國的美光。他在利基型市場講話非常有份量。</li>
+                        <li><strong class="text-blue-700">台股市值關鍵權值股：</strong> 他就像台灣半導體產業的『天氣預報員』。他的業績好，就代表整個記憶體產業、甚至電子股的景氣都會很好。</li>
+                    </ul>
+
+                    <p class="mt-4 font-bold text-slate-800">【逐點解釋：他們賣什麼？】</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-3">
+                        <li><strong class="text-blue-700">核心業務 (DRAM)：</strong> DRAM 就像是手機和電腦的『辦公桌面』。你開 APP、玩遊戲都需要放桌面，桌面越大跑得越快，他們就是專門製造這種桌面的專家。</li>
+                        <li><strong class="text-blue-700">應用場景：</strong> 不只是手機跟電腦，現在連雲端的伺服器、數據中心，甚至大家開的『智慧型汽車 (車用電子)』和網路設備，通通都需要用到他們的晶片。</li>
+                        <li><strong class="text-blue-700">新藍海布局 (AI記憶體)：</strong> 這點最重要！因為現在 AI 爆發，AI 運算需要更大的空間，南亞科成功研發出專門給邊緣運算 AI 用的『客製化 UWIO 記憶體』，這也是他們現在最賺錢的秘密武器。</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 第二區塊：逐點解釋營運指標 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="text-xs font-bold text-slate-500 mb-3 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：游標引導至【核心技術布局與轉型營運指標】的三個方塊
+                    </div>
+                    <p class="text-base font-semibold text-slate-800 mb-2">【逐點解釋：三個營運指標方塊】</p>
+                    <p>「了解他們賣什麼之後，我們來看這三個代表他們『未來戰鬥力』的方塊：</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-3">
+                        <li><strong class="text-indigo-700">1. 最新營運成果 (8.41元)：</strong> EPS 8.41 元的意思是，如果你買了他一股，他短短三個月就幫你賺了 8 塊多。下方還寫到『營收 490.87 億』，這代表他比上一季暴增了 63.1%，這是一個極度誇張的跳躍式成長！</li>
+                        <li><strong class="text-indigo-700">2. 先進製程進度 (1C/1D)：</strong> 大家不用背英文，只要看下面的『EUV』跟『泰山新廠』。EUV 是世界上最貴、最頂級的製造設備(就像超高級烤箱)。南亞科現在正在蓋新廠，預計 2027 年就要把這台設備搬進去。烤箱越好，烤出的晶片越強、越省電，確保他們未來絕對不會落後給對手。</li>
+                        <li><strong class="text-indigo-700">3. 資本結構與私募 (787.2 億)：</strong> 私募就像是『VIP 客戶付的超級訂金』。有四個超級大客戶，直接拿了快 800 億給南亞科。為什麼？因為就像簡報寫的，要『穩固長期供貨聯盟』！客戶太怕未來買不到 AI 晶片，乾脆砸大錢變股東，先把未來的貨通通包下來。」</li>
+                    </ul>
+                </div>
+
+                <!-- 4. 四大報表比喻 -->
                 <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
                     <div class="text-xs font-bold text-slate-500 mb-3 flex items-center">
                         <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span> 動作：向下捲動至【四大報表重點解析】
                     </div>
                     <p class="text-base font-semibold text-slate-800 mb-2">【把四大報表當作開餐廳的體檢表】</p>
-                    <p>「很多人聽到報表就害怕，但其實我們可以把它想像成『開一家餐廳的體檢表』，我們只要看這四個重點：」</p>
+                    <p>「接著看四大財務報表，我們把它想像成『開餐廳的體檢表』就好：」</p>
                     <ul class="list-disc pl-5 mt-3 space-y-3">
-                        <li><strong class="text-blue-700">1. 損益表 (有沒有賺錢)：</strong> 就像看餐廳每個月的收支本。南亞科去年還在賠錢，但今年晶片價格大漲，讓他們從賠錢變成狂賺 260 億！這叫做漂亮的『V型反轉』。</li>
-                        <li><strong class="text-indigo-700">2. 資產負債表 (口袋深不深)：</strong> 就像看老闆的銀行存款跟欠債。南亞科現在存款超級多，欠銀行的錢很少，公司非常安全。</li>
-                        <li><strong class="text-emerald-700">3. 現金流量表 (收銀機有活水嗎)：</strong> 雖然他們花很多錢在蓋新工廠，但因為現在本業賺現金的速度太快了，每天收銀機進來的錢完全夠付工程款，不怕付不出錢。</li>
-                        <li><strong class="text-amber-700">4. 股東權益變動表 (大乾爹入股)：</strong> 這張表看的是老闆換了誰！南亞科最近找來了四個超級 VIP 客戶，直接砸了 800 億當股東。因為他們太怕未來買不到晶片，乾脆拿錢入股綁定產能，這讓南亞科的後台變得無比堅硬！</li>
+                        <li><strong class="text-blue-700">1. 損益表 (有沒有賺錢)：</strong> 南亞科去年還在賠錢，但今年晶片價格暴漲 70%，讓他們從賠錢變成狂賺 260 億！這叫做『極端的 V型反轉』。</li>
+                        <li><strong class="text-indigo-700">2. 資產負債表 (口袋深不深)：</strong> 因為前面那 800 億的 VIP 資金進來了，每股淨值提高，現在公司口袋超級深，欠銀行的錢比例變得很低，公司非常安全。</li>
+                        <li><strong class="text-emerald-700">3. 現金流量表 (收銀機有活水嗎)：</strong> 雖然他們花很多錢蓋泰山新廠，但現在本業賺現金的速度太快了，每天收銀機進來的錢完全夠付工程款，毫無壓力。</li>
+                        <li><strong class="text-amber-700">4. 股東權益變動表 (大乾爹入股)：</strong> 這張表看的是老闆換了誰！因為四個大客戶砸了將近 800 億入股，這讓南亞科的股權結構變得無比堅硬，未來的訂單也有了保障。</li>
                     </ul>
                 </div>
 
-                <!-- 3. 四大獲利指標比喻 -->
+                <!-- 5. 四大獲利指標比喻 -->
                 <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 shadow-sm">
                     <div class="text-xs font-bold text-indigo-700 mb-3 flex items-center">
                         <span class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span> 動作：滑動至最下方【四大指標與折線圖】
                     </div>
                     <p class="text-base font-semibold text-slate-800 mb-2">【用賣手搖飲解釋四大獲利指標】</p>
-                    <p>「最後，大家看到圖表上的四條線。這四條線其實就是『開手搖飲店』過關斬將的四個階段：」</p>
+                    <p>「最後，這四條線其實就是『開手搖飲店』過關斬將的四個階段：」</p>
                     <ul class="list-disc pl-5 mt-3 space-y-3">
-                        <li><strong class="text-emerald-600">第一關｜毛利率 (綠線)：</strong> 假設你賣一杯珍奶 100 元，珍珠跟茶葉成本 30 元，毛利就是 70%。大家看圖表右邊，南亞科現在的毛利率接近 68%，代表這產品本身極度暴利！</li>
-                        <li><strong class="text-amber-600">第二關｜營業利益率 (黃線)：</strong> 但你還要付房租、水電跟員工薪水對吧？扣掉這些開店的必要花費後，南亞科還剩下 61% 的利潤，這代表他們控制成本的能力非常強。</li>
-                        <li><strong class="text-purple-600">第三關｜稅前淨利率 (紫線)：</strong> 老闆除了賣珍奶，可能還有把店裡的閒錢拿去買股票賺了點外快，或者要扣掉借錢的利息。加上這些『業外收入與支出』後，繳稅前他們還能維持在 60% 的高水準。</li>
-                        <li><strong class="text-blue-600">第四關｜稅後淨利率 (藍線)：</strong> 最後一關，乖乖把營業稅繳給政府後，真正放進老闆口袋裡的錢！南亞科最後還剩下 53.09%。賣 100 塊能實拿 53 塊，這根本是印鈔機等級！</li>
+                        <li><strong class="text-emerald-600">第一關｜毛利率 (綠線)：</strong> 賣一杯珍奶 100 元，材料成本 30 元，毛利就是 70%。大家看圖表右邊，南亞科現在的毛利率接近 68%，代表這產品本身極度暴利！</li>
+                        <li><strong class="text-amber-600">第二關｜營業利益率 (黃線)：</strong> 扣掉房租、水電跟員工薪水後，南亞科還剩下 61% 的利潤，代表他們控制成本的能力非常強。</li>
+                        <li><strong class="text-purple-600">第三關｜稅前淨利率 (紫線)：</strong> 老闆除了賣珍奶，可能還拿閒錢去投資賺了錢。大家可以看表格中的『稅前淨利率』，在 2025年第二季還是負 48.46%，但到了今年第一季直接衝到 64.62%！加上這些業外收入後，繳稅前的獲利表現極度驚人。</li>
+                        <li><strong class="text-blue-600">第四關｜稅後淨利率 (藍線)：</strong> 最後一關，乖乖繳稅給政府後，真正放進老闆口袋裡的錢！南亞科最後還剩下 53.09%。賣 100 塊能實拿 53 塊，這根本是印鈔機等級！</li>
                     </ul>
                     <p class="mt-4 font-bold text-slate-900">【結語】</p>
-                    <p>「從賣一個賠一個的慘況，到現在擁有四大金主撐腰、獲利指標全面飆升的印鈔機。這就是南亞科成功轉型的故事，一家值得大家認識的台灣之光。謝謝大家！」</p>
+                    <p>「從賣一個賠一個的慘況，到現在擁有四大金主撐腰、獲利指標全面飆升。這就是南亞科成功轉型的故事，謝謝大家！」</p>
                 </div>
             </div>
         </div>
@@ -288,7 +323,7 @@
                     },
                     {
                         label: '稅前淨利率 (%)',
-                        data: [-41.20, 9.80, 41.55, 60.12],
+                        data: [-48.46, 10.77, 44.47, 64.62],
                         borderColor: 'rgba(168, 85, 247, 1)', // Purple
                         backgroundColor: 'rgba(168, 85, 247, 0.05)',
                         borderWidth: 3,
